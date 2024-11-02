@@ -29,8 +29,19 @@ export const HomeBanner = () => {
         </div>
       </div>
 
-      <div className="grid">
-        
+      <div className="grid grid-cols-4 gap-4">
+        <div>
+          <img src="/man.png" alt="" />
+        </div>
+        <div>
+          <img src="/man.png" alt="" />
+        </div>
+        <div>
+          <img src="/man.png" alt="" />
+        </div>
+        <div>
+          <img src="/man.png" alt="" />
+        </div>
       </div>
     </div>
   );
