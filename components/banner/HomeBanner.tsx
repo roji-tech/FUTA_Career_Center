@@ -2,7 +2,7 @@ import React from "react";
 
 export const HomeBanner = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col px-[5%] mb-24">
       <h2 className="flex gap-6 justify-center">
         <div className="cursor-pointer py-2 border-b-2 border-b-[#021f33] text-center text-[#021f33] text-base font-bold">
           Student
@@ -29,18 +29,18 @@ export const HomeBanner = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 items-end">
         <div>
-          <img src="/man.png" alt="" />
+          <img className="mx-auto" src="/lady.png" alt="" />
         </div>
         <div>
-          <img src="/man.png" alt="" />
+          <img className="mx-auto" src="/shortlady.png" alt="" />
         </div>
         <div>
-          <img src="/man.png" alt="" />
+          <img className="mx-auto" src="/smilyman.png" alt="" />
         </div>
-        <div>
-          <img src="/man.png" alt="" />
+        <div className="max-lg:custom-grid-area">
+          <img className="mx-auto" src="/man.png" alt="" />
         </div>
       </div>
     </div>

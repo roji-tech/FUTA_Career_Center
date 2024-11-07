@@ -7,13 +7,19 @@ export const LanndingPageHeader = () => {
     <div className="w-full h-[90px] px-[5%] bg-[#f1b807] justify-between items-center inline-flex">
       <img src={"/logo.svg"} />
 
-      <div className="justify-start items-center gap-2.5 flex">
-        <Link href={"#"} className="px-10 py-3 rounded border border-[#021f33] justify-center items-center gap-2.5 flex">
+      <div className="max-sm:hidden justify-start items-center gap-2.5 flex">
+        <Link
+          href={"#"}
+          className="px-10 py-3 rounded border border-[#021f33] justify-center items-center gap-2.5 flex"
+        >
           <span className="whitespace-nowrap text-center text-[#021f33] text-xl font-bold">
             Log In
           </span>
         </Link>
-        <Link href={"#"} className="px-10 py-3 bg-[#086cb4] rounded justify-center items-center gap-2.5 flex">
+        <Link
+          href={"#"}
+          className="px-10 py-3 bg-[#086cb4] rounded justify-center items-center gap-2.5 flex"
+        >
           <span className="whitespace-nowrap text-center text-[#f0f0f1] text-xl font-bold font-['Eudoxus Sans']">
             SIgn Up
           </span>
