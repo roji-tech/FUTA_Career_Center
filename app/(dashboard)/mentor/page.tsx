@@ -1,4 +1,4 @@
-import { DashboardHeader } from "@/components/headers/DashboardHeader";
+import { DashboardNavbar } from "@/components/headers/DashboardHeader";
 
 export default function Student() {
   return (

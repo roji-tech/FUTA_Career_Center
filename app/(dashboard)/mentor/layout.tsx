@@ -1,4 +1,4 @@
-import { DashboardHeader } from "@/components/headers/DashboardHeader";
+import { DashboardNavbar } from "@/components/headers/DashboardHeader";
 import type { Metadata } from "next";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <div>
       <SidebarProvider>
-        <DashboardHeader />
+        <DashboardNavbar />
         <div className="wrapper">{children}</div>
 
         <AppSidebar />
