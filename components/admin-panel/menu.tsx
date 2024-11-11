@@ -114,6 +114,29 @@ export function Menu({ isOpen }: MenuProps) {
             </li>
           ))}
 
+          <div className="w-[78px] h-[280.92px] flex-col justify-center items-center gap-[30px] inline-flex">
+            <div className="h-[47.25px] flex-col justify-center items-center gap-2 flex">
+              <div className="self-stretch text-center text-[#032740] text-[10px] font-medium font-['Eudoxus Sans']">
+                Home
+              </div>
+            </div>
+            <div className="h-[45px] flex-col justify-center items-center gap-2 flex">
+              <div className="self-stretch text-center text-[#032740] text-[10px] font-medium font-['Eudoxus Sans']">
+                Explore
+              </div>
+            </div>
+            <div className="self-stretch h-[47.67px] flex-col justify-center items-center gap-2 flex">
+              <div className="w-[69px] text-center text-[#032740] text-[10px] font-medium font-['Eudoxus Sans']">
+                Appointments
+              </div>
+            </div>
+            <div className="self-stretch h-[51px] flex-col justify-center items-center gap-2 flex">
+              <div className="w-[69px] text-center text-[#032740] text-[10px] font-medium font-['Eudoxus Sans']">
+                Notifications
+              </div>
+            </div>
+          </div>
+
           <li className="w-full grow flex items-end">
             <TooltipProvider disableHoverableContent>
               <Tooltip delayDuration={100}>

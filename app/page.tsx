@@ -7,7 +7,7 @@ import { LanndingPageHeader } from "@/components/headers/HomeHeader";
 
 export default function Home() {
   return (
-    <main className="flex mx-auto min-h-screen flex-col max-w-[1500px]">
+    <main className="bg-white flex mx-auto min-h-screen flex-col max-w-[1500px]">
       <LanndingPageHeader />
       <HomeBanner />
       <AllEvents />
