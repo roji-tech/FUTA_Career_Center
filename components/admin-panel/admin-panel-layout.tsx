@@ -25,9 +25,9 @@ export default function AdminPanelLayout({
           "flex"
         )}
       >
-        <div className={!getOpenState() ? "lg:w-[90px]" : "lg:w-72"}>
-        </div>
+        <div className={"lg:w-[105px] h-full max-h-full"}>
           <Sidebar />
+        </div>
 
         <main className="flex-1 p-4">{children}</main>
       </main>
