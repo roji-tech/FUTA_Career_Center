@@ -60,9 +60,13 @@ export function LoginComponent() {
           <div>
             <input
               type="text"
-              placeholder="Matric Number"
+              placeholder="Matric Number (e.g., MNE/20/0343)"
               {...register("matricNumber", {
                 required: "Matric number is required",
+                pattern: {
+                  value: /^[A-Z]{3}\/\d{2}\/\d{4}$/,
+                  message: "Matric number must follow the format MNE/20/0343",
+                },
               })}
               className={formStyles(errors.matricNumber)}
             />
