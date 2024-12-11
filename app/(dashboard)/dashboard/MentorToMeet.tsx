@@ -2,8 +2,9 @@ import React from "react";
 
 export const MentorToMeet = () => {
   const MENTORS = [
-    { name: "", occupation: "" },
-    { name: "", occupation: "" },
+    { name: "Abiola Oloko", occupation: "UX Designer, Google" },
+    { name: "Fatima Yusuf", occupation: "UX Designer, Google" },
+    { name: "Adeola Adeshiba", occupation: "UX Designer, Google" },
   ];
 
   return (
@@ -12,7 +13,7 @@ export const MentorToMeet = () => {
         Mentors to meet
       </h2>
 
-      <div className="flex gap-10 items-center">
+      <div className="flex gap-6 items-center flex-wrap justify-around">
         <div className="h-[522px] px-6 py-10 bg-[#021727] rounded-[20px] flex-col justify-center items-start gap-6 inline-flex">
           <div className="justify-center items-center gap-6 inline-flex">
             <div className="w-[298px] flex-col justify-start items-start gap-2 inline-flex">
@@ -42,14 +43,14 @@ export const MentorToMeet = () => {
           >
             <img
               className="w-[276px] h-[328px] rounded-[20px]"
-              src="https://via.placeholder.com/276x328"
+              src="abiola.png"
             />
             <div className="text-center text-[#4c6171] text-3xl font-bold font-['Eudoxus Sans']">
-              Abiola Oloko
+              {mentor?.name}
             </div>
             <div className="justify-center items-center gap-6 inline-flex">
               <div className="w-[226px] text-[#6d7880] text-base font-medium font-['Eudoxus Sans'] leading-normal">
-                UX Designer, Google
+                {mentor.occupation}
               </div>
             </div>
           </div>

@@ -30,14 +30,14 @@ export function Menu({ isOpen }: MenuProps) {
 
   return (
     <ScrollArea className="bg-[#f0f2f4] [&>div>div[style]]:!block h-full">
-      <nav className="pt-14 h-full w-full flex flex-col justify-between pb-16">
+      <nav className="pt-14 h-full w-full flex flex-col justify-between overflow-y-auto box-border max-h-[85vh]">
         <ul className="flex flex-col gap-6 items-start space-y-1 px-2 justify-center">
           {menuList.map((item, index) => (
             <div
               key={index}
               className={cn(
                 "flex-col cursor-pointer py-2 w-full justify-center items-center gap-2 flex hover:bg-[#ffffff70] transition-all duration-200",
-                "max-lg:flex-row max-lg:justify-start max-lg:gap-5",
+                "max-lg:flex-row max-lg:justify-start max-lg:gap-5"
               )}
             >
               <div className="w-max lg:mx-auto">{item.icon}</div>
@@ -48,11 +48,13 @@ export function Menu({ isOpen }: MenuProps) {
           ))}
         </ul>
 
-        <div className="image ">
-          <img
-            className="w-20 h-20 rounded-full mx-auto"
-            src="https://via.placeholder.com/80x80"
-          />
+        <div className="pb-12">
+          <div className="image ">
+            <img
+              className="w-20 h-20 rounded-full mx-auto"
+              src="/lady.png"
+            />
+          </div>
         </div>
       </nav>
     </ScrollArea>

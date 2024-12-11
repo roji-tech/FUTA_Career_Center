@@ -31,7 +31,7 @@ export const AllEvents1 = () => {
         />
       </div>
 
-      {/* <div className="flex justify-center items-center w-full pt-8 gap-2">
+      <div className="flex justify-center items-center w-full pt-8 gap-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="34"
@@ -54,7 +54,7 @@ export const AllEvents1 = () => {
             <circle cx="17" cy="17" r="17" fill="#D9DBDC" />
           </svg>
         ))}
-      </div> */}
+      </div>
     </div>
   );
 };

@@ -29,7 +29,7 @@ export default function AdminPanelLayout({
           <Sidebar />
         </div>
 
-        <main className="flex-1 p-4">{children}</main>
+        <main className="flex-1 p-4 overflow-x-hidden overflow-y-auto">{children}</main>
       </main>
     </div>
   );

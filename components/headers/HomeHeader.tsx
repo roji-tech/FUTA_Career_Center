@@ -9,7 +9,7 @@ export const LanndingPageHeader = () => {
 
       <div className="max-sm:hidden justify-start items-center gap-2.5 flex">
         <Link
-          href={"#"}
+          href={"/login"}
           className="px-10 py-3 rounded border border-[#021f33] justify-center items-center gap-2.5 flex"
         >
           <span className="whitespace-nowrap text-center text-[#021f33] text-xl font-bold">
@@ -17,7 +17,7 @@ export const LanndingPageHeader = () => {
           </span>
         </Link>
         <Link
-          href={"#"}
+          href={"/register"}
           className="px-10 py-3 bg-[#086cb4] rounded justify-center items-center gap-2.5 flex"
         >
           <span className="whitespace-nowrap text-center text-[#f0f0f1] text-xl font-bold font-['Eudoxus Sans']">

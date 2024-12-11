@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 /* scrollbar */
 /* Track */
 *::-webkit-scrollbar {
@@ -28,6 +34,9 @@
   /* color of the scrollbar handle on hover */
 }
 /* end of scrollbar */
+
+/* :root {
+} */
 
 @layer base {
   :root {
@@ -59,7 +68,7 @@
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
   }
 
   .dark {
@@ -99,5 +108,25 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+
+  ._border {
+    @apply border-4 border-yellow-500;
+  }
+
+  ._border_inner {
+    @apply border-4 border-yellow-500;
+  }
+
+  ._border_inner > * {
+    @apply border-4 border-green-400;
+  }
+
+  ._border_red {
+    @apply border-4 border-red-500;
+  }
+
+  ._border_blue {
+    @apply border-4 border-blue-500;
   }
 }
