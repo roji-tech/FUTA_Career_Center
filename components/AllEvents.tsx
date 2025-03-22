@@ -3,11 +3,11 @@ import React from "react";
 export const AllEvents = () => {
   return (
     <div className="px-[5%] mb-24 flex flex-col gap-0">
-      <h2 className="text-[#021f33] text-[40px] font-medium">All Events</h2>
+      <h2 className="text-[#021f33] text-[34px] lg:text-[40px] font-medium">All Events</h2>
 
       <div className="min-h-[331px] p-6 bg-[#fefcf8] rounded-[20px] border border-[#d8dadb] justify-center gap-6 flex flex-col lg:flex-row">
         <div className="flex-col justify-start items-start gap-6 inline-flex">
-          <div className="text-[#021f33] text-5xl font-bold">
+          <div className="text-[#021f33] text-[34px] lg:text-5xl font-bold">
             Meet & Greet With <br className="lg:block hidden" />
             Engr. Fatima
           </div>

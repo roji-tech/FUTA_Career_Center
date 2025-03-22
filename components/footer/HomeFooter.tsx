@@ -3,7 +3,7 @@ import React from "react";
 export const HomeFooter = () => {
   return (
     <div className="w-full px-[5%] bg-[#f1b807] py-20">
-      <h3 className="w-full mb-12 text-center text-[#021f33] text-[64px] max-md:text-[40px] font-bold">
+      <h3 className="w-full mb-12 text-center text-[#021f33] text-[64px] max-md:text-[34px] font-bold">
         What
         <span className="text-[#021f33] italic font-normal font-['Times New Roman']">
           {" you "}

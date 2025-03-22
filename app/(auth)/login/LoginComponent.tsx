@@ -39,6 +39,7 @@ export function LoginComponent() {
       setLoading(false); // Stop loading
     }
   };
+
   const formStyles = (condition: any, otherStyles = "") =>
     `w-full px-4 py-2 border rounded-sm outline outline-none hover:outline-[0.5px] ${
       condition ? "border-red-500" : "border-none"

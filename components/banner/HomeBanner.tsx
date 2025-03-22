@@ -1,6 +1,16 @@
 import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export const HomeBanner = () => {
+  const IMGs = ["/lady.png", "/shortlady.png", "/smilyman.png", "/man.png"];
+
   return (
     <div className="flex flex-col px-[5%] mb-24">
       <h2 className="flex gap-6 justify-center">
@@ -14,10 +24,10 @@ export const HomeBanner = () => {
 
       <div className="w-full pt-8 flex-col justify-start items-center gap-[21px] inline-flex">
         <div className="max-w-[583px] text-center">
-          <span className="text-[#021f33] text-[64px] font-bold">
+          <span className="text-[#021f33] text-[34px] lg:text-[64px] font-bold">
             Empowering Your Future,{" "}
           </span>
-          <span className="text-[#021f33] text-[64px] font-normal font-['Times New Roman']">
+          <span className="text-[#021f33] text-[34px] lg:text-[64px] font-normal font-['Times New Roman']">
             Today
           </span>
         </div>
@@ -29,7 +39,25 @@ export const HomeBanner = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+      <Carousel className="md:hidden w-full max-w-[80%] mt-6 mx-auto">
+        <CarouselContent>
+          {IMGs.map((img, index) => (
+            <CarouselItem key={index}>
+              <div className="p-1">
+                <Card>
+                  <CardContent className="flex aspect-square items-center justify-center p-6">
+                    <img src={img} alt="" />
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
+
+      <div className="md:grid hidden grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
         <div>
           <img className="mx-auto" src="/lady.png" alt="" />
         </div>
