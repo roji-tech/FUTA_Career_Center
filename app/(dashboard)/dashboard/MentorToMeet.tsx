@@ -9,14 +9,14 @@ export const MentorToMeet = () => {
 
   return (
     <div className="mb-24 flex flex-col gap-1">
-      <h2 className="text-[#021f33] text-[40px] font-medium">
+      <h2 className="text-[#021f33] text-[34px] lg:text-[40px] font-medium">
         Mentors to meet
       </h2>
 
       <div className="flex gap-6 items-center flex-wrap justify-around">
         <div className="h-[522px] px-6 py-10 bg-[#021727] rounded-[20px] flex-col justify-center items-start gap-6 inline-flex">
           <div className="justify-center items-center gap-6 inline-flex">
-            <div className="w-[298px] flex-col justify-start items-start gap-2 inline-flex">
+            <div className="max-w-[298px] flex-col justify-start items-start gap-2 inline-flex">
               <div className="self-stretch text-[#f0f0f1] text-3xl font-bold font-['Eudoxus Sans']">
                 Discover Mentors
               </div>
@@ -26,7 +26,7 @@ export const MentorToMeet = () => {
             </div>
           </div>
           <img
-            className="w-[280px] h-[267px] rounded-[20px]"
+            className="w-full max-w-[280px] h-[267px] rounded-[20px]"
             src="https://via.placeholder.com/280x267"
           />
           <div className="px-10 py-4 bg-[#086cb4] rounded justify-center items-center gap-2.5 inline-flex">
